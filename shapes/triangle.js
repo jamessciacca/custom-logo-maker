@@ -14,4 +14,4 @@ class Triangle {
     }
 }
 
-module.export = Triangle;
+export default Triangle;

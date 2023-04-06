@@ -1,10 +1,9 @@
 //setting up the modules
-const inquirer = require('inquirer');
-const fs = require('fs');
-//pulling in the shape files created
-const Circle = require('./shapes/circle');
-const Triangle = require('./shapes/triangle');
-const Square = require('./shapes/square');
+import inquirer from 'inquirer';
+import Circle from './shapes/circle.js'
+import Triangle from './shapes/triangle.js'
+import Square from './shapes/square.js'
+import fs from 'fs'
 
 //creating prompts for the user
 inquirer.prompt([
@@ -89,3 +88,7 @@ function svgFile({characters, textColor, shape, shapeColor}, shapeType){
     </svg>`;
 }
 //shape and shape color are not called here, they are called in the specific shape classes 
+
+
+//errors 
+//I am getting a type error on line 55 saying that Circle is not a constructor

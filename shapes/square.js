@@ -15,4 +15,4 @@ class Square {
     }
 }
 
-module.export = Square;
+export default Square;

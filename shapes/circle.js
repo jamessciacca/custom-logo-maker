@@ -18,4 +18,4 @@ class Circle {
 }
 
 //using module-export to share this class with the script.js file!
-module.export = Circle;
+export default Circle;
