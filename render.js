@@ -82,7 +82,7 @@ inquirer.prompt([
 //i pass in m,y arguments like this because I am using a template literal!
 function svgFile({characters, textColor, shape, shapeColor}, shapeType){
     //this function will return a template literal string with the users choices
-    `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     ${shapeType}<text x="150" y="125" font-size="60" text-anchor="middle" fill="${textColor}">
     ${characters}</text>
     </svg>`;
